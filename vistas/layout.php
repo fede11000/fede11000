@@ -1,60 +1,75 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-16">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="img/logo.png">
-	<title>Foro Militar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Elite</title>
+  <!-- Tipografia -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
-	<header>
-		<div id="borde_bandera">
-			<img src="img/min_defensa.png" id="bandera">
-		</div>
-		<div id="header_bus">
-			<form id="header_buscador">
-				<input type="search" id="header_form_input_buscar">
-				<button id="header_form_subir" type="submit"><img id="header_form_subir_img" src="img/lupa.png"></button>
-			</form>
-		</div>
-		<div id="header_navegador">
-			<nav>
-				<a class="nav_a">Inicio</a>
-				<a class="nav_a">Noticias</a>
-				<a class="nav_a">Inscripciones</a>
-				<a class="nav_a">Contacto</a>
-			</nav>
-		</div>
-		<div id="header_acceder">
-			<button id="header_ingresar"><a href="link.com" style="color: white;">Ingresar</a></button>
-			<button id="header_registrarse"><a href="https://google.com" style="color: white;">Registarse</a></button>
-		</div>
-	</header>
-	<div id="borde_aside">
-		<?php require_once "includes/menu.inc.php"; ?>
-	</div>
-	<?php require_once $section; ?>
-	<footer>
-		<div id="footer_contacto">
-			<p class="footer_contenido">Contactos</p>
-			<p class="footer_contenido">Telefono: 54 1192839114</p>
-			<p class="footer_contenido">Correo: correofalso@fake.com</p>
-		</div>
-		<div id="footer_redes">
-			<p class="footer_contenido">Redes</p>
-			<img src="img/redes/ig.png" id="footer_ig" class="footer_botones">
-			<img src="img/redes/fb.jpg" id="footer_fb" class="footer_botones">
-			<img src="img/redes/tw.png" class="footer_botones">
-		</div>
-		<div id="footer_info">
-			<p class="footer_contenido">Más</p>
-			<p class="footer_contenido">Terminos y condiciones</p>
-			<p class="footer_contenido">Politicas de privacidad</p>
-		</div>
-		<p id="footer_final">Copyright © 2022 Global Power</p>
-	</footer>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x" id="negro"></i>
+  </div>
+
+  <div class="container">
+  <?php require_once "vistas/header.php"; ?>
+    <!-- Navigation -->
+   <br>
+
+    <?php
+            $section = (isset($section)) ? $section : 'home';
+            require_once $section ;
+            ?>
+
+    <!-- Redes Sociales -->
+    <section class="social">
+      <p>Seguinos en nuestras redes</p>
+      <div class="links">
+        <a href="https://www.facebook.com/profile.php?id=100084197506639">
+          <i class="fab fa-facebook-f" id="negro"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter" id="negro"></i>
+        </a>
+        <a href="https://instagram.com/ffaa_argent01?igshid=YmMyMTA2M2Y=">
+          <i class="fab fa-instagram" id="negro"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="footer-links">
+    <div class="footer-container">
+      <ul>
+        <li>
+          <a href="#">
+            <h3 id="blanco">Sobre nosotros.</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="blanco">Somos un grupo de alumnos en un proyecto escolar, al parecer militar, haciendo una pagina web.</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>Global Elite Proyecto®</h3>
+  </footer>
+
+  <!-- Javascript animacion -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/modificar.js"></script>
 </body>
 
 </html>

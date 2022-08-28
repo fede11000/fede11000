@@ -1,4 +1,4 @@
 <?php 
-$section = "vistas/home.php";
+$section = "home.php";
 require_once "vistas/layout.php";
 ?>

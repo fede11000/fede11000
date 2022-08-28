@@ -16,4 +16,3 @@ while ($fila = mysqli_fetch_assoc($res)) {
 
 $section = "vistas/divisiones_lista.php";
 require_once "vistas/layout.php";
-?>

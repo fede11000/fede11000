@@ -1,7 +1,7 @@
 <?php
 require_once "includes/config.php";
 
-$sql = "UPDATE venta_de_armas SET nacioanlidad = '".$_GET["cambio"]."' WHERE id_arma = ".$_GET["id"]."";
+$sql = "UPDATE venta_de_armas SET nacioanlidad = '".$_POST["cambio"]."' WHERE id_arma = ".$_POST["id"]."";
 $res = mysqli_query($conn, $sql);
 
 if (!$res) {

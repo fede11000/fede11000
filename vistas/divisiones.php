@@ -9,11 +9,11 @@
 
     <?php foreach ($dou as $xd) { ?>
         <tr>
-            <td><?php echo $xd['id_arma']?></td>
-            <td><?php echo $xd['tipo_arma']?></td>
-            <td><?php echo $xd['name_arma']?></td>
-            <td><?php echo $xd['nacioanlidad']?></td>
-            <td><?php echo $xd['precio_arma']?></td>
+            <td><?php echo $xd['id_arma'] ?></td>
+            <td><?php echo $xd['tipo_arma'] ?></td>
+            <td><?php echo $xd['name_arma'] ?></td>
+            <td><?php echo $xd['nacionalidad'] ?></td>
+            <td><?php echo $xd['precio_arma'] ?></td>
         </tr>
     <?php } ?>
 

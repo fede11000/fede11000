@@ -9,4 +9,3 @@ if (!$res) {
 }
 
 header("Location: divisiones_lista.php");
-?>
